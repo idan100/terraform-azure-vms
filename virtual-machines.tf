@@ -29,9 +29,9 @@ resource "azurerm_virtual_machine" "test" {
   }
 
   os_profile {
-    computer_name  = "hostname"
-    admin_username = "testadmin"
-    admin_password = "Password1234!"
+    computer_name  = "tfvm"
+    admin_username = "adminIdan"
+    admin_password = "Idantheking123!"
   }
 
   os_profile_linux_config {
