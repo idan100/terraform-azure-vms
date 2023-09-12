@@ -36,7 +36,7 @@ resource "azurerm_network_interface" "main" {
   location            = "${azurerm_resource_group.rg.location}"
   resource_group_name = "${azurerm_resource_group.rg.name}"
   tags                = "${var.tags}"
-  count               = "3"
+  count               = "1"
 
   ip_configuration {
     name                          = "testconfiguration${count.index}"
