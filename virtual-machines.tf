@@ -5,7 +5,7 @@ resource "azurerm_virtual_machine" "test" {
   network_interface_ids = ["${element(azurerm_network_interface.main.*.id, count.index)}"] #["${azurerm_network_interface.main.id}"]
   vm_size               = "Standard_DS1_V2"
   count                 = "1"
-  eviction_policy       = "Deallocate"
+  priority              = "Spot"
 
   # This means the OS Disk will be deleted when Terraform destroys the Virtual Machine
   # NOTE: This may not be optimal in all cases.
