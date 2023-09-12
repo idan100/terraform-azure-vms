@@ -39,6 +39,6 @@ resource "azurerm_network_interface" "main" {
   ip_configuration {
     name                          = "testconfiguration${count.index}"
     subnet_id                     = "${azurerm_subnet.subnet1.id}"
-    private_ip_address_allocation = "dynamic"
+    private_ip_address_allocation = "Dynamic"
   }
 }
