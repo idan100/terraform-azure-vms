@@ -38,5 +38,5 @@ resource "azurerm_virtual_machine" "test" {
     disable_password_authentication = false
   }
 
-  tags = {"application":"gaia"}
+  tags = "${var.tags}"
 }
