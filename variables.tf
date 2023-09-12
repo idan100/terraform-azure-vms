@@ -19,6 +19,6 @@ variable "location" {
 
 variable "tags" {
   type        = map(string)
-  default     = {"application"="gaia"}
+  default     = {application="gaia"}
   description = "Any tags which should be assigned to the resources in this example"
 }
